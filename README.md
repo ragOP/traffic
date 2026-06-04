@@ -1,7 +1,7 @@
 # traffic
 
-Static landing pages for Verbraucher Fokus Test traffic.
+NL traffic landing pages.
 
 - `/` — simple index with links
-- `/altv2/` — comparison page (v2)
-- `/altuva/` — German advertorial
+- `/berberine-pleisters-vergelijken/` — Berberine pleisters comparison
+- `/afslankpleisters-vergelijken/` — Afslankpleisters comparison
