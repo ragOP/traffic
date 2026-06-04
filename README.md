@@ -1,7 +1,7 @@
 # traffic
 
-NL traffic landing pages.
+NL traffic landing pages (flat `.html` paths).
 
-- `/` — simple index with links
-- `/berberine-pleisters-vergelijken/` — Berberine pleisters comparison
-- `/afslankpleisters-vergelijken/` — Afslankpleisters comparison
+- `index.html`
+- `berberine-pleisters-vergelijken.html`
+- `afslankpleisters-vergelijken.html`
