@@ -56,15 +56,7 @@
   .pcard.win{border:2px solid var(--gold);box-shadow:0 14px 34px rgba(184,144,47,.16)}
   .ribbon{position:absolute;top:-13px;left:22px;background:var(--gold);color:#fff;font-size:12px;font-weight:800;letter-spacing:.04em;padding:5px 13px;border-radius:99px;text-transform:uppercase}
   .ptop{display:flex;gap:18px;align-items:center}
-  .shot{width:96px;height:112px;border-radius:12px;flex:none;background:
-      radial-gradient(120% 80% at 50% 0%,#fff,transparent),
-      linear-gradient(160deg,#7b1733,#a8203f 55%,#cf3a52);
-    display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;position:relative;overflow:hidden;box-shadow:inset 0 -18px 30px rgba(0,0,0,.18)}
-  .shot.b{background:linear-gradient(160deg,#3a4a5e,#5a6b80)}
-  .shot.c{background:linear-gradient(160deg,#4a5247,#6b7563)}
-  .shot small{font-size:9px;letter-spacing:.12em;text-transform:uppercase;opacity:.85;margin-top:3px}
-  .shot .nm{font-family:var(--serif);font-weight:700;font-size:16px}
-  .shot .dot{width:34px;height:34px;border-radius:50%;border:2px solid rgba(255,255,255,.55);margin-bottom:7px}
+  .prod-img{width:140px;height:140px;flex:none;display:block;object-fit:contain;object-position:center}
   .pmeta{flex:1;min-width:0}
   .rk{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
   .win .rk{color:var(--gold)}
@@ -125,7 +117,7 @@
   .sticky .sp span{font-size:12px;color:var(--red);font-weight:700}
   .sticky a{background:var(--green);color:#fff;font-weight:800;text-decoration:none;padding:13px 18px;border-radius:10px;white-space:nowrap;font-size:15px}
   @media(min-width:760px){ .sticky{display:none} body{padding-bottom:0} }
-  @media(max-width:560px){ .stats{grid-template-columns:1fr 1fr} .crit{grid-template-columns:1fr} .ptop{flex-direction:column;text-align:center} .pmeta{text-align:center} .price{justify-content:center} }
+  @media(max-width:560px){ .stats{grid-template-columns:1fr 1fr} .crit{grid-template-columns:1fr} .ptop{flex-direction:column;text-align:center} .prod-img{width:100%;max-width:260px;height:auto;max-height:200px;margin:0 auto} .pmeta{text-align:center} .price{justify-content:center} }
 </style>
 </head>
 <body>
@@ -177,8 +169,7 @@
       <div class="pcard win">
         <span class="ribbon">★ Beste keuze</span>
         <div class="ptop">
-          <!-- TODO: vervang door echte productafbeelding (bv. 1.png) -->
-          <div class="shot"><span class="dot"></span><span class="nm">Altuva</span><small>Berberine</small></div>
+          <img class="prod-img" src="3.png" alt="Altuva Berberine Pleister">
           <div class="pmeta">
             <div class="rk">#1 · Redactionele aanbeveling</div>
             <div class="pname">Altuva Berberine Pleister</div>
@@ -201,8 +192,7 @@
       <!-- #2 -->
       <div class="pcard">
         <div class="ptop">
-          <!-- TODO: vervang door echte productafbeelding (bv. 2.png) -->
-          <div class="shot b"><span class="dot"></span><span class="nm">Pleister B</span><small>Berberine</small></div>
+          <img class="prod-img" src="2.png" alt="Pleister B">
           <div class="pmeta">
             <div class="rk">#2</div>
             <div class="pname">Pleister B</div>
@@ -214,15 +204,12 @@
           <li>Hogere prijs per pleister of minder pleisters per pakket</li>
           <li>Goed draagcomfort</li>
         </ul>
-        <!-- TODO: Replace with NL tracking link -->
-        <a class="cta alt" href="https://OFFER-LINK-NL?sub2={keyword}">Bekijk beschikbaarheid</a>
       </div>
 
       <!-- #3 -->
       <div class="pcard">
         <div class="ptop">
-          <!-- TODO: vervang door echte productafbeelding (bv. 3.png) -->
-          <div class="shot c"><span class="dot"></span><span class="nm">Pleister C</span><small>Berberine</small></div>
+          <img class="prod-img" src="1.png" alt="Pleister C">
           <div class="pmeta">
             <div class="rk">#3</div>
             <div class="pname">Pleister C</div>
@@ -234,8 +221,6 @@
           <li>Beperktere ingrediëntenmix</li>
           <li>Redelijke keuze, maar minder compleet</li>
         </ul>
-        <!-- TODO: Replace with NL tracking link -->
-        <a class="cta alt" href="https://OFFER-LINK-NL?sub2={keyword}">Bekijk beschikbaarheid</a>
       </div>
 
     </div>
